@@ -1,39 +1,41 @@
 {
-  "name": "vapid",
-  "version": "0.1.0",
-  "description": "Vapid, a vacuous Redis implementation for connection tests.",
-  "homepage": "https://github.com/rootslab/vapid",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/rootslab/vapid.git"
-  },
-  "keywords": [
+  "name": "vapid"
+  , "version": "0.1.1"
+  , "description": "Vapid, a vacuous Redis implementation for connection tests."
+  , "homepage": "https://github.com/rootslab/vapid"
+  , "private": false
+  , "repository": {
+    "type": "git"
+    , "url": "git://github.com/rootslab/vapid.git"
+  }
+  , "keywords": [
     "vapid"
     , "redis"
-  ],
-  "author": {
-    "name": "Guglielmo Ferri",
-    "email": "44gatti@gmail.com"
-  },
-  "dependencies": {
+  ]
+  , "author": {
+    "name": "Guglielmo Ferri"
+    , "email": "44gatti@gmail.com"
+  }
+  , "dependencies": {
     "bolgia" : ">=2.7.3"
     , "train" : ">=4.2.0"
     , "gerry" : ">=0.5.3"
+    , "abaco": "=1.10.1"
+    , "peela": "=1.2.3"
   },
   "devDependencies": {
     "spade" : ">=0.44.4"
-  },
-  "main": "index",
-  "engines": {
+  }
+  , "main": "index"
+  , "engines": {
     "node": ">=0.10.x"
-  },
-  "scripts": {
+  }
+  , "scripts": {
     "test": "node test/run.js"
-  },
-  "license": "MIT",
-  "readmeFilename": "Readme.md",
-  "bugs": {
+  }
+  , "license": "MIT"
+  , "readmeFilename": "Readme.md"
+  , "bugs": {
     "url": "https://github.com/rootslab/spade/issues"
   }
 }
