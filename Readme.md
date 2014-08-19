@@ -124,7 +124,7 @@ Vapid#send : function ( Buffer data | String data [, Array client_id_list ] ) : 
  * Server voluntarily crashd after calling Vapid#crash. All socket connections
  * will be destroyed and the server will be closed.
  */
-Vapid#crash : function () : undefined
+Vapid#crash : function () : Number
 ```
 
 ###Events
