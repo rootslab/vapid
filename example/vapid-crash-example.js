@@ -25,6 +25,7 @@ client.cli();
 vapid.listen( 6380, function () {
     setTimeout( function () {
         vapid.crash();
+        
     }, 2000 );
 } );
 
