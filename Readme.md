@@ -24,6 +24,15 @@
 $ npm install vapid [-g]
 ```
 
+> __install and update devDependencies__:
+
+```bash
+ $ cd vapid/
+ $ npm install --dev
+ # update
+ $ npm update --dev
+```
+
 > __require__:
 
 ```javascript
@@ -40,21 +49,57 @@ $ npm test
 ###Constructor
 
 ```javascript
-Vapid()
+Vapid( [ Object opt ] )
 // or
-new Vapid()
+new Vapid( [ Object opt ] )
 ```
+
 ####Options
 
 > Default options are listed.
 
 ```javascript
-
+{
+    secret : 'secret'
+    , maxdb : 16
+}
 ```
 
 ###Properties
 
+> All properties from net.Server module are inherited : 'connections', 'maxConnections', ..
+
 ```javascript
+ /*
+  * A property that holds the initial config object.
+  */
+ Vapid.options : Object
+
+ /*
+  * Hash of connected clients/sockets.
+  */
+ Vapid.clients : Object
+
+ /*
+  * Command Queues for connected clients, every queue is an instance of Train.
+  */
+ Vapid.cqueues : Object
+
+ /*
+  * Parsers for connected clients.
+  */
+ Vapid.parsers : Object
+
+ /*
+  * An object containing implemented Redis commands.
+  * For now, only the 5 connection commands are implemented.
+  */
+ Vapid.commands : Object
+
+ /*
+  *
+  */
+ Vapid.logger : Gerry
 
 ```
 
@@ -62,8 +107,32 @@ new Vapid()
 
 > Arguments within [ ] are optional.
 
-```javascript
+> All methods from net.Server module are inherited : 'listen', 'address', ..
 
+```javascript
+/*
+ * Enable logging to console.
+ */
+Vapid#cli : function ( [ Boolean enable [, Function logger [, Boolean collect_events ] ] ] ) : undefined
+
+/*
+ * Send data to all connected clients ( optionally you can specify a reduced list ).
+ */
+Vapid.send : function ( Buffer data | String data [, Array client_id_list ] ) : Number
+
+```
+
+###Events
+
+> All the events from net.Server module are inherited: 'listening', 'connection'. 'close', 'error', ..
+
+> Vapid custom events:
+
+```javascript
+/*
+ * A client has disconnected
+ */
+ 'disconnection' : function ( String client_id )
 ```
 
 ### MIT License

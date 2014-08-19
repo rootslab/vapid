@@ -25,10 +25,3 @@ client.cli();
 vapid.listen( 6380 )
 
 client.connect();
-
-// client.commands.config.get( 'ciao' )
-//client.commands.ping()
-// client.commands.auth( 'secret' )
-//client.commands.ping()
-//client.commands.quit()
-
