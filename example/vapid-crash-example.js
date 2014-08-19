@@ -16,21 +16,15 @@ var log = console.log
             address : {
                 port : 6380
             }
-            , reconnection : {
-                trials : 0
-            }
         }
     } )
     ;
-
 vapid.cli();
 client.cli();
 
 vapid.listen( 6380, function () {
     setTimeout( function () {
-        client.disconnect( function () {
-            vapid.close();
-        } );
+        vapid.crash();
     }, 2000 );
 } );
 

@@ -118,8 +118,13 @@ Vapid#cli : function ( [ Boolean enable [, Function logger [, Boolean collect_ev
 /*
  * Send data to all connected clients ( optionally you can specify a reduced list ).
  */
-Vapid.send : function ( Buffer data | String data [, Array client_id_list ] ) : Number
+Vapid#send : function ( Buffer data | String data [, Array client_id_list ] ) : Number
 
+/*
+ * Server voluntarily crashd after calling Vapid#crash. All socket connections
+ * will be destroyed and the server will be closed.
+ */
+Vapid#crash : function () : undefined
 ```
 
 ###Events
@@ -133,6 +138,12 @@ Vapid.send : function ( Buffer data | String data [, Array client_id_list ] ) : 
  * A client has disconnected
  */
  'disconnection' : function ( String client_id )
+
+ /*
+  * Emitted when server crashes, it happens after the 'close' events.
+  * See also Vapid#crash.
+  */
+ 'crashed' : function ( Number trashed )
 ```
 
 ### MIT License
