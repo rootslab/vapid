@@ -169,4 +169,4 @@ Vapid#crash : function () : Number
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[![GA](https://ga-beacon.appspot.com/UA-53998692-1/syllabus/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
+[![GA](https://ga-beacon.appspot.com/UA-53998692-1/vapid/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
