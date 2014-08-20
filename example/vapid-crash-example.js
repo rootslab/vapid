@@ -22,10 +22,11 @@ var log = console.log
 vapid.cli();
 client.cli();
 
+vapid.on( 'crashed', client.disconnect.bind( client ) );
+
 vapid.listen( 6380, function () {
     setTimeout( function () {
         vapid.crash();
-        
     }, 2000 );
 } );
 
