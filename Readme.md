@@ -92,9 +92,10 @@ new Vapid( [ Object opt ] )
 
  /*
   * An object containing implemented Redis commands.
-  * For now, only the 5 connection commands are implemented.
   */
- Vapid.commands : Object
+ Vapid.commands : {
+
+ }
 
  /*
   *
