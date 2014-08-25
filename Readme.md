@@ -16,7 +16,9 @@
 
 [![NPM GRAPH2](https://nodei.co/npm/vapid.png?downloads=true&stars=true)](https://nodei.co/npm/vapid/)
 
-> __Vapid__, a vacuous Redis implementation for connection tests.
+> __Vapid__, a vacuous Redis implementation for connection tests, with a fully functional PubSub system.
+
+> See __[lib/commands](./lib/commands)__ dir to check for implemented commands.
 
 ###Install
 
@@ -93,14 +95,17 @@ new Vapid( [ Object opt ] )
  /*
   * An object containing implemented Redis commands.
   */
- Vapid.commands : {
-
- }
+ Vapid.commands : Object
 
  /*
   *
   */
  Vapid.logger : Gerry
+
+ /*
+  * An object containing bindings between channels/patterns and clients subscribed to.
+  */
+ Vapid.pubsub : Object
 
 ```
 
@@ -126,6 +131,11 @@ Vapid#send : function ( Buffer data | String data [, Array client_id_list ] ) : 
  * will be destroyed and the server will be closed.
  */
 Vapid#crash : function () : Number
+
+/*
+ * Mute all or a list of sockets, server discards commands until mute will be switched off.
+ */
+Vapid#mute : function ( [ Boolean silent [, Array socket_names ] ] ) : Number
 ```
 
 ###Events
