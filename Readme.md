@@ -14,9 +14,9 @@
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/vapid.png)](https://nodei.co/npm/vapid/)
 
-[![NPM GRAPH2](https://nodei.co/npm/vapid.png?downloads=true&stars=true)](https://nodei.co/npm/vapid/)
+[![NPM GRAPH2](https://nodei.co/npm/vapid.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vapid/)
 
-> __Vapid__, a vacuous Redis implementation for connection tests, with a fully functional PubSub system.
+> __Vapid__, a vacuous Redis implementation for connection tests, with a fully functional PubSub system for multiple clients.
 
 > See __[lib/commands](./lib/commands)__ dir to check for implemented commands.
 
@@ -47,6 +47,20 @@ var Vapid  = require( 'vapid' );
 $ cd vapid/
 $ npm test
 ```
+
+###Run Benchmarks
+
+> run benchmarks for __Vapid__ PubSub system with __Spade__ clients.
+
+```bash
+$ cd vapid/
+$ npm run bench
+```
+
+> __NOTE__:
+>  - in order to use __spade__ and __hiredis__ native parser, install **_devDependencies_** .
+
+----------------------------------------------------------------------------------------------
 
 ###Constructor
 

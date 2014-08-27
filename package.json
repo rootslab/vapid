@@ -1,7 +1,7 @@
 {
   "name": "vapid"
-  , "version": "0.6.4"
-  , "description": "Vapid, a vacuous Redis implementation for connection tests, with a fully functional PubSub system."
+  , "version": "0.7.0"
+  , "description": "Vapid, a vacuous Redis implementation for connection tests, with a fully functional PubSub system for multiple clients."
   , "homepage": "https://github.com/rootslab/vapid"
   , "private": false
   , "repository": {
@@ -32,7 +32,8 @@
     , "peela": "=1.2.3"
   },
   "devDependencies": {
-    "spade" : ">=0.44.4"
+    "spade" : ">=0.46.6"
+    , "hiredis" : ">=0.1.17"
   }
   , "main": "index"
   , "engines": {
@@ -40,6 +41,7 @@
   }
   , "scripts": {
     "test": "node test/run.js"
+    , "bench" : "bash bench/run.sh"
   }
   , "license": "MIT"
   , "readmeFilename": "Readme.md"
