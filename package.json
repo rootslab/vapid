@@ -46,6 +46,6 @@
   , "license": "MIT"
   , "readmeFilename": "Readme.md"
   , "bugs": {
-    "url": "https://github.com/rootslab/spade/issues"
+    "url": "https://github.com/rootslab/vapid/issues"
   }
 }
