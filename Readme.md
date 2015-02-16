@@ -30,9 +30,9 @@ $ npm install vapid [-g]
 
 ```bash
  $ cd vapid/
- $ npm install --dev
+ $ npm install 
  # update
- $ npm update --dev
+ $ npm update 
 ```
 
 > __require__:
