@@ -1,20 +1,23 @@
 ### Vapid
 
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
-[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
-
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/vapid#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/vapid.svg?style=flat)](http://npm-stat.com/charts.html?package=vapid)
-
 [![NPM VERSION](http://img.shields.io/npm/v/vapid.svg?style=flat)](https://www.npmjs.org/package/vapid)
+[![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/vapid)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/vapid#mit-license)
+
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/vapid.svg?style=flat)](http://travis-ci.org/rootslab/vapid)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/vapid.svg?style=flat)](https://david-dm.org/rootslab/vapid)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/vapid.svg?style=flat)](https://david-dm.org/rootslab/vapid#info=devDependencies)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/vapid.svg?style=flat)](http://npm-stat.com/charts.html?package=vapid)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/vapid.png)](https://nodei.co/npm/vapid/)
 
 [![NPM GRAPH2](https://nodei.co/npm/vapid.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vapid/)
+
+[![status](https://sourcegraph.com/api/repos/github.com/rootslab/vapid/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/vapid)
+[![views](https://sourcegraph.com/api/repos/github.com/rootslab/vapid/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/vapid)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/vapid/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/vapid)
 
 > __Vapid__, a vacuous Redis implementation for connection tests, with a fully functional PubSub system for multiple clients.
 
