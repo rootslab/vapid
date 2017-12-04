@@ -2,28 +2,24 @@
 
 [![NPM VERSION](http://img.shields.io/npm/v/vapid.svg?style=flat)](https://www.npmjs.org/package/vapid)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/vapid)
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
 [![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/vapid#mit-license)
 
+![NODE VERSION](https://img.shields.io/node/v/vapid.svg)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/vapid.svg?style=flat)](http://travis-ci.org/rootslab/vapid)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/vapid.svg?style=flat)](https://david-dm.org/rootslab/vapid)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/vapid.svg?style=flat)](https://david-dm.org/rootslab/vapid#info=devDependencies)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/vapid.svg?style=flat)](http://npm-stat.com/charts.html?package=vapid)
 
-[![NPM GRAPH1](https://nodei.co/npm-dl/vapid.png)](https://nodei.co/npm/vapid/)
+[![NPM MONTHLY](http://img.shields.io/npm/dm/vapid.svg?style=flat)](http://npm-stat.com/charts.html?package=vapid)
+![NPM YEARLY](https://img.shields.io/npm/dy/vapid.svg)
 
-[![NPM GRAPH2](https://nodei.co/npm/vapid.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vapid/)
-
-[![status](https://sourcegraph.com/api/repos/github.com/rootslab/vapid/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/vapid)
-[![views](https://sourcegraph.com/api/repos/github.com/rootslab/vapid/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/vapid)
-[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/vapid/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/vapid)
+[![NPM GRAPH](https://nodei.co/npm/vapid.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vapid/)
 
 > __Vapid__, a vacuous Redis implementation for connection tests, with a fully functional PubSub system for multiple clients.
 
 > See __[lib/commands](./lib/commands)__ dir to check for implemented commands.
 
-###Install
+### Install
 
 ```bash
 $ npm install vapid [-g]
@@ -44,14 +40,14 @@ $ npm install vapid [-g]
 var Vapid  = require( 'vapid' );
 ```
 
-###Run Tests
+### Run Tests
 
 ```bash
 $ cd vapid/
 $ npm test
 ```
 
-###Run Benchmarks
+### Run Benchmarks
 
 > run benchmarks for __Vapid__ PubSub system with __Spade__ clients.
 
@@ -65,7 +61,7 @@ $ npm run bench
 
 ----------------------------------------------------------------------------------------------
 
-###Constructor
+### Constructor
 
 ```javascript
 Vapid( [ Object opt ] )
@@ -73,7 +69,7 @@ Vapid( [ Object opt ] )
 new Vapid( [ Object opt ] )
 ```
 
-####Options
+### #Options
 
 > Default options are listed.
 
@@ -84,7 +80,7 @@ new Vapid( [ Object opt ] )
 }
 ```
 
-###Properties
+### Properties
 
 > All properties from net.Server module are inherited : 'connections', 'maxConnections', ..
 
@@ -126,7 +122,7 @@ new Vapid( [ Object opt ] )
 
 ```
 
-###Methods
+### Methods
 
 > Arguments within [ ] are optional.
 
@@ -155,7 +151,7 @@ Vapid#crash : function () : Number
 Vapid#mute : function ( [ Boolean silent [, Array socket_names ] ] ) : Number
 ```
 
-###Events
+### Events
 
 > All the events from net.Server module are inherited: 'listening', 'connection'. 'close', 'error', ..
 
@@ -176,7 +172,7 @@ Vapid#mute : function ( [ Boolean silent [, Array socket_names ] ] ) : Number
 
 ### MIT License
 
-> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015-present &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
@@ -196,5 +192,3 @@ Vapid#mute : function ( [ Boolean silent [, Array socket_names ] ] ) : Number
 > CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[![GA](https://ga-beacon.appspot.com/UA-53998692-1/vapid/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
