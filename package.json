@@ -1,6 +1,6 @@
 {
   "name": "vapid"
-  , "version": "0.7.3"
+  , "version": "0.7.4"
   , "description": "Vapid, a vacuous Redis implementation for connection tests, with a fully functional PubSub system for multiple clients."
   , "homepage": "https://github.com/rootslab/vapid"
   , "private": false
