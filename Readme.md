@@ -2,7 +2,7 @@
 
 [![NPM VERSION](http://img.shields.io/npm/v/vapid.svg?style=flat)](https://www.npmjs.org/package/vapid)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/vapid)
-[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/c/rootslab/vapid.svg?style=flat)](https://codeclimate.com/github/rootslab/vapid)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/vapid#mit-license)
 
 ![NODE VERSION](https://img.shields.io/node/v/vapid.svg)
